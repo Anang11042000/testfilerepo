@@ -24,7 +24,6 @@ mkdir /var/lib/premium-script;
 echo "Ingrese el nombre de host del subdominio VPS, si no está disponible, haga clic en Enter"
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
-echo "$host" >> /root/domain
 wget https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 wget https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
